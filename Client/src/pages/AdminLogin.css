@@ -1,0 +1,140 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    animation: backgroundFade 5s infinite alternate;
+  }
+  
+
+  .login-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.6s ease-in-out;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .login-title {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+    animation: titleGlow 2s infinite alternate;
+  }
+  
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Styling */
+  .form-control {
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .form-control:focus {
+    background-color: #e8e8e8;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background: rgba(0, 123, 255, 0.5);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #2575fc;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes backgroundFade {
+    0% {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    100% {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+  }
+  
+  @keyframes titleGlow {
+    0% {
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  /* Advanced Styling for Floating Effect */
+  .login-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%);
+    animation: floatingEffect 6s ease-in-out infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes floatingEffect {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .login-card {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .login-title {
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem;
+    }
+  }
+  

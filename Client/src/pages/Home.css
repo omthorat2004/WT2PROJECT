@@ -1,0 +1,13 @@
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+  }
+  
+  .carousel img {
+    max-height: 700px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+}
+
+  

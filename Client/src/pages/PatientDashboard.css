@@ -1,0 +1,23 @@
+.filter-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .filter-options .btn {
+    flex: 1;
+    margin: 0 5px;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .filter-options .btn:hover {
+    background-color: #007bff; /* Change color on hover */
+    color: white; /* Change text color */
+  }
+  
+  .filter-options .btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for focus effect */
+  }
+  

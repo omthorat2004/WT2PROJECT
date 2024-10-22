@@ -1,0 +1,11 @@
+.dashboard-menu{
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-menu div {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
